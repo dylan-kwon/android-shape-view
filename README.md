@@ -17,28 +17,28 @@ implementation("dylan.kwon:shape-view:$version")
 ```xml
 
 <dylan.kwon.shapeview.ShapeView
-        app:cornerRadius="8dp"
+    app:cornerRadius="8dp"
 
-        app:solidColor="@color/white"
+    app:solidColor="@color/white"
 
-        app:strokeColor="@color/black"
-        app:strokeWidth="5dp"
-        app:strokeDashWidth="5dp"
-        app:strokeDashGap="5dp"
+    app:strokeColor="@color/black"
+    app:strokeWidth="5dp"
+    app:strokeDashWidth="5dp"
+    app:strokeDashGap="5dp"
 
-        app:rippleColor="@color/red"
-        app:rippleEnabled="@color/red"
+    app:rippleColor="@color/red"
+    app:rippleEnabled="@color/red"
 
-        app:useClip="true"
+    app:useClip="true"
 
-        app:gradientType="radial"
-        app:gradientOrientation="LEFT_RIGHT"
-        app:gradientStartColor="@color/red"
-        app:gradientCenterColor="@color/blue"
-        app:gradientEndColor="@color/black"
-        app:gradientRadius="100dp"
-        app:gradientX="0.5"
-        app:gradientY="0.5">
+    app:gradientType="radial"
+    app:gradientOrientation="LEFT_RIGHT"
+    app:gradientStartColor="@color/red"
+    app:gradientCenterColor="@color/blue"
+    app:gradientEndColor="@color/black"
+    app:gradientRadius="100dp"
+    app:gradientX="0.5"
+    app:gradientY="0.5">
 
     <!--    Put your child view here    -->
 
@@ -49,7 +49,7 @@ implementation("dylan.kwon:shape-view:$version")
 ```xml
 
 <dylan.kwon.shapeview.ShapeView
-        app:strokeColor="@{viewModel.isError ? @color/red : @color/green}"
+    app:strokeColor="@{viewModel.isError ? @color/red : @color/green}"
 />
 ```
 
