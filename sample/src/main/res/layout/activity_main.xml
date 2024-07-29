@@ -59,7 +59,7 @@
             app:useClip="true"
             tools:strokeColor="@color/red">
 
-            <com.google.android.material.textview.MaterialTextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"

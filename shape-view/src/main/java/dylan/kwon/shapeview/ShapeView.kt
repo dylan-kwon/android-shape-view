@@ -96,9 +96,9 @@ class ShapeView @JvmOverloads constructor(
         foreground = rippleFactory.create(createBackground(), ripple)
     }
 
-    override fun draw(canvas: Canvas?) {
+    override fun draw(canvas: Canvas) {
         if (useClip) {
-            canvas?.clip()
+            canvas.clip()
         }
         super.draw(canvas)
     }
