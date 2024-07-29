@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.konan.properties.loadProperties
+
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.jetbrains.kotlin.android)
@@ -20,15 +22,6 @@ android {
         consumerProguardFiles("consumer-rules.pro")
     }
 
-    buildTypes {
-        release {
-            isMinifyEnabled = true
-            proguardFiles(
-                getDefaultProguardFile("proguard-android-optimize.txt"),
-                "proguard-rules.pro"
-            )
-        }
-    }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
@@ -39,7 +32,6 @@ android {
     publishing {
         singleVariant("release") {
             withSourcesJar()
-            withJavadocJar()
         }
     }
     dataBinding {
@@ -48,16 +40,19 @@ android {
 }
 
 publishing {
-    publications {
-        repositories {
-            maven(properties["githubRepoUrl"].toString()) {
-                credentials {
-                    username = properties["githubUserName"].toString()
-                    password = properties["githubToken"].toString()
-                }
+    val properties = loadProperties(
+        rootProject.file("deploy.properties").path
+    )
+    repositories {
+        maven(properties["githubRepoUrl"].toString()) {
+            credentials {
+                username = properties["githubUserName"].toString()
+                password = properties["githubToken"].toString()
             }
         }
-        register<MavenPublication>("Shared") {
+    }
+    publications {
+        register<MavenPublication>(name) {
             groupId = properties["groupId"].toString()
             artifactId = properties["artifactId"].toString()
             version = properties["versionName"].toString()

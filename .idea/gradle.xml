@@ -9,8 +9,8 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/libs" />
             <option value="$PROJECT_DIR$/sample" />
+            <option value="$PROJECT_DIR$/shape-view" />
           </set>
         </option>
         <option name="resolveExternalAnnotations" value="false" />
