@@ -42,6 +42,6 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.androidx.constraintLayout)
-    implementation(projects.shapeView)
-//    implementation(libs.dylan.kwon.shapeView)
+//    implementation(projects.shapeView)
+    implementation(libs.dylan.kwon.shapeView)
 }

@@ -8,7 +8,17 @@ without the need to create a separate ShapeDrawable file.
 
 ## Install
 
+```kotlin
+dependencyResolutionManagement {
+    ..
+    repositories {
+        ..
+        maven("https://maven.pkg.github.com/dylan-kwon/ShapeView")
+    }
+}
 ```
+
+```kotlin
 implementation("dylan.kwon:shape-view:$version")
 ```
 
