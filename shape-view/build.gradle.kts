@@ -41,7 +41,7 @@ android {
 
 publishing {
     val properties = loadProperties(
-        rootProject.file("deploy.properties").path
+        rootProject.file("publish.properties").path
     )
     repositories {
         maven(properties["githubRepoUrl"].toString()) {
