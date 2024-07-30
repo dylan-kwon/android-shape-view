@@ -13,7 +13,12 @@ dependencyResolutionManagement {
     ..
     repositories {
         ..
-        maven("https://maven.pkg.github.com/dylan-kwon/ShapeView")
+        maven("https://maven.pkg.github.com/dylan-kwon/ShapeView") {
+            credentials {
+                username = INPUT-YOUR-USER-NAME
+                password = INPUT-YOUR-GITHUB-TOKEN
+            }
+        }
     }
 }
 ```
