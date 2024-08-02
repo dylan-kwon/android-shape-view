@@ -15,8 +15,8 @@ dependencyResolutionManagement {
         ..
         maven("https://maven.pkg.github.com/dylan-kwon/android-shape-view") {
             credentials {
-                username = INPUT-YOUR-USER-NAME
-                password = INPUT-YOUR-GITHUB-TOKEN
+                username = INPUT_YOUR_GITHUB_USER_NAME
+                password = INPUT_YOUR_GITHUB_TOKEN
             }
         }
     }
