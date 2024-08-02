@@ -29,6 +29,6 @@ dependencyResolutionManagement {
 
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
-rootProject.name = "ShapeView"
+rootProject.name = "android-shape-view"
 include(":sample")
 include(":shape-view")
