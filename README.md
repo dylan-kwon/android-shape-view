@@ -1,6 +1,6 @@
 # ShapeView
 
-**ShapeDrawable** allows you to directly use attributes such as `Shape`, `Stroke`, `Color`, `Ripple`, `Gradient` in XML
+**ShapeView** allows you to directly use attributes such as `Shape`, `Stroke`, `Color`, `Ripple`, `Gradient` in XML
 without the need to create a separate ShapeDrawable file.
 
 ## Preview
