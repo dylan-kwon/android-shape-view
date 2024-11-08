@@ -38,6 +38,6 @@ jobs:
       - name: Release
         uses: ncipollo/release-action@v1
         with:
-          tag: v${{ env.VERSION_NAME }}
+          tag: ${{ env.VERSION_NAME }}
           allowUpdates: true
           generateReleaseNotes: true
