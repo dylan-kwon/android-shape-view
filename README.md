@@ -1,3 +1,5 @@
+![Maven Central Version](https://img.shields.io/maven-central/v/io.github.dylan-kwon/shape-view-android)
+
 # ShapeView
 
 **ShapeView** allows you to directly use attributes such as `Shape`, `Stroke`, `Color`, `Ripple`, `Gradient` in XML
@@ -9,22 +11,7 @@ without the need to create a separate ShapeDrawable file.
 ## Install
 
 ```kotlin
-dependencyResolutionManagement {
-    ..
-    repositories {
-        ..
-        maven("https://maven.pkg.github.com/dylan-kwon/android-shape-view") {
-            credentials {
-                username = INPUT_YOUR_GITHUB_USER_NAME
-                password = INPUT_YOUR_GITHUB_TOKEN
-            }
-        }
-    }
-}
-```
-
-```kotlin
-implementation("dylan.kwon:shape-view:$version")
+implementation("io.github.dylan-kwon:shape-view-android:$version")
 ```
 
 ## How To Use
